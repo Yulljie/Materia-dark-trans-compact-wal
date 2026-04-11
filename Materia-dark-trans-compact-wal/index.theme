@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Materia-dark-trans-compact-wal
+Comment=A Material Design theme
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Materia-dark-trans-compact-wal
+MetacityTheme=Materia-dark-trans-compact-wal
+IconTheme=Adwaita
+CursorTheme=Adwaita
+CursorSize=24
