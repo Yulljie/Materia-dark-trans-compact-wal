@@ -1,6 +1,6 @@
 # Materia-dark-trans-compact-wal
 
-A modified GTK theme based on [materia-theme](https://github.com/nana-4/materia-theme).
+A modified GTK theme based on [materia-theme](https://github.com/nana-4/materia-theme) featuring translucent background and dynamic color.
 
 ## Usage
 
