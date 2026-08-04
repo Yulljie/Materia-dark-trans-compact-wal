@@ -69,6 +69,11 @@ button:active {
 .background {
   background-color: @background;
   color: @color7;
+  transition: background-color 0.25s;
+}
+
+.background:backdrop {
+  background-color: alpha(@background_no_alpha, 0.8);
 }
 
 /*
@@ -1585,7 +1590,6 @@ searchbar > revealer > box {
 
 .titlebar button:not(.suggested-action):not(.destructive-action) {
   border-image: radial-gradient(circle closest-corner at center calc(100% - 1px), currentcolor 0%, transparent 0%) 0 0 0/0 0 0;
-  background-color: transparent;
   color: alpha(@color7, 0.6);
   box-shadow: none;
   background-color: transparent;
@@ -1611,11 +1615,12 @@ searchbar > revealer > box {
 }
 
 .path-bar-box .nautilus-path-bar button:not(.suggested-action):not(.destructive-action):last-child:dir(ltr), .path-bar-box .nautilus-path-bar button:not(.suggested-action):not(.destructive-action):first-child:dir(rtl), .titlebar button:not(.suggested-action):not(.destructive-action):checked {
-  border-image: radial-gradient(circle closest-corner at center calc(100% - 1px), currentcolor 100%, transparent 0%) 0 0 2/0 0 2px;
+/*  border-image: radial-gradient(circle closest-corner at center calc(100% - 1px), currentcolor 100%, transparent 0%) 0 0 2/0 0 2px;  */
   background-color: transparent;
   color: alpha(@color7, 0.87);
   box-shadow: none;
-  background-color: transparent;
+/*  background-color: transparent;  */
+  background-color: alpha(@color7, 0.08);
 }
 
 .path-bar-box .nautilus-path-bar button:drop(active):not(.suggested-action):not(.destructive-action):last-child:dir(ltr), .path-bar-box .nautilus-path-bar button:drop(active):not(.suggested-action):not(.destructive-action):first-child:dir(rtl), .path-bar-box .nautilus-path-bar button:hover:not(.suggested-action):not(.destructive-action):last-child:dir(ltr), .path-bar-box .nautilus-path-bar button:hover:not(.suggested-action):not(.destructive-action):first-child:dir(rtl), .titlebar button:not(.suggested-action):not(.destructive-action):checked:drop(active), .titlebar button:not(.suggested-action):not(.destructive-action):checked:hover {
