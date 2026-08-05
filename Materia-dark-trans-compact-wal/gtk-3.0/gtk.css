@@ -2863,6 +2863,7 @@ treeview.view radio:checked {
 /**
  * GtkScale
  */
+
 scale {
   min-height: 2px;
   min-width: 2px;
@@ -2895,7 +2896,7 @@ scale.fine-tune.vertical {
 }
 
 scale.fine-tune slider {
-  margin: -14px;
+  margin: -4px;
 }
 
 scale trough {
@@ -2951,7 +2952,7 @@ scale slider:focus {
 }
 
 scale slider:active {
-  box-shadow: 0 0 0 10px alpha(@color12, 0.12);
+  box-shadow: 0 0 0 10px alpha(@primary, 0.16);
 }
 
 scale marks,
@@ -3015,7 +3016,9 @@ scale.vertical indicator {
 }
 
 scale.horizontal.marks-before:not(.marks-after) slider {
-  background-image: -gtk-scaled(url("assets/scale-horz-marks-before-slider-dark.png"), url("assets/scale-horz-marks-before-slider-dark@2.png")), radial-gradient(circle, transparent 10%, transparent 0%);
+/*  background-image: -gtk-scaled(url("assets/scale-horz-marks-before-slider-dark.png"), url("assets/scale-horz-marks-before-slider-dark@2.png")), radial-gradient(circle, transparent 10%, transparent 0%);  */
+  background-color: @primary;
+  border-radius: 50%;
 }
 
 scale.horizontal.marks-before:not(.marks-after) slider:disabled {
@@ -3023,11 +3026,15 @@ scale.horizontal.marks-before:not(.marks-after) slider:disabled {
 }
 
 scale.horizontal.marks-before:not(.marks-after) slider:active {
-  background-image: -gtk-scaled(url("assets/scale-horz-marks-before-slider-dark.png"), url("assets/scale-horz-marks-before-slider-dark@2.png")), radial-gradient(circle, alpha(@primary, 0.16) 10%, transparent 0%);
+/*  background-image: -gtk-scaled(url("assets/scale-horz-marks-before-slider-dark.png"), url("assets/scale-horz-marks-before-slider-dark@2.png")), radial-gradient(circle, alpha(@primary, 0.16) 10%, transparent 0%);  */
+  background-color: @primary;
+  border-radius: 50%;
 }
 
 scale.horizontal.marks-after:not(.marks-before) slider {
-  background-image: -gtk-scaled(url("assets/scale-horz-marks-after-slider-dark.png"), url("assets/scale-horz-marks-after-slider-dark@2.png")), radial-gradient(circle, transparent 10%, transparent 0%);
+/*  background-image: -gtk-scaled(url("assets/scale-horz-marks-after-slider-dark.png"), url("assets/scale-horz-marks-after-slider-dark@2.png")), radial-gradient(circle, transparent 10%, transparent 0%); */
+  background-color: @primary;
+  border-radius: 50%;
 }
 
 scale.horizontal.marks-after:not(.marks-before) slider:disabled {
@@ -3035,11 +3042,15 @@ scale.horizontal.marks-after:not(.marks-before) slider:disabled {
 }
 
 scale.horizontal.marks-after:not(.marks-before) slider:active {
-  background-image: -gtk-scaled(url("assets/scale-horz-marks-after-slider-dark.png"), url("assets/scale-horz-marks-after-slider-dark@2.png")), radial-gradient(circle, alpha(@primary, 0.16) 10%, transparent 0%);
+/*  background-image: -gtk-scaled(url("assets/scale-horz-marks-after-slider-dark.png"), url("assets/scale-horz-marks-after-slider-dark@2.png")), radial-gradient(circle, alpha(@primary, 0.16) 10%, transparent 0%);  */
+  background-color: @primary;
+  border-radius: 50%;
 }
 
 scale.vertical.marks-before:not(.marks-after) slider {
-  background-image: -gtk-scaled(url("assets/scale-vert-marks-before-slider-dark.png"), url("assets/scale-vert-marks-before-slider-dark@2.png")), radial-gradient(circle, transparent 10%, transparent 0%);
+/*  background-image: -gtk-scaled(url("assets/scale-vert-marks-before-slider-dark.png"), url("assets/scale-vert-marks-before-slider-dark@2.png")), radial-gradient(circle, transparent 10%, transparent 0%); */
+  background-color: @primary;
+  border-radius: 50%;
 }
 
 scale.vertical.marks-before:not(.marks-after) slider:disabled {
@@ -3047,11 +3058,15 @@ scale.vertical.marks-before:not(.marks-after) slider:disabled {
 }
 
 scale.vertical.marks-before:not(.marks-after) slider:active {
-  background-image: -gtk-scaled(url("assets/scale-vert-marks-before-slider-dark.png"), url("assets/scale-vert-marks-before-slider-dark@2.png")), radial-gradient(circle, alpha(@primary, 0.16) 10%, transparent 0%);
+/*  background-image: -gtk-scaled(url("assets/scale-vert-marks-before-slider-dark.png"), url("assets/scale-vert-marks-before-slider-dark@2.png")), radial-gradient(circle, alpha(@primary, 0.16) 10%, transparent 0%); */
+  background-color: @primary;
+  border-radius: 50%;
 }
 
 scale.vertical.marks-after:not(.marks-before) slider {
-  background-image: -gtk-scaled(url("assets/scale-vert-marks-after-slider-dark.png"), url("assets/scale-vert-marks-after-slider-dark@2.png")), radial-gradient(circle, transparent 10%, transparent 0%);
+/*  background-image: -gtk-scaled(url("assets/scale-vert-marks-after-slider-dark.png"), url("assets/scale-vert-marks-after-slider-dark@2.png")), radial-gradient(circle, transparent 10%, transparent 0%);  */
+  background-color: @primary;
+  border-radius: 50%;
 }
 
 scale.vertical.marks-after:not(.marks-before) slider:disabled {
@@ -3059,40 +3074,11 @@ scale.vertical.marks-after:not(.marks-before) slider:disabled {
 }
 
 scale.vertical.marks-after:not(.marks-before) slider:active {
-  background-image: -gtk-scaled(url("assets/scale-vert-marks-after-slider-dark.png"), url("assets/scale-vert-marks-after-slider-dark@2.png")), radial-gradient(circle, alpha(@primary, 0.16) 10%, transparent 0%);
+/*  background-image: -gtk-scaled(url("assets/scale-vert-marks-after-slider-dark.png"), url("assets/scale-vert-marks-after-slider-dark@2.png")), radial-gradient(circle, alpha(@primary, 0.16) 10%, transparent 0%);  */
+  background-color: @primary;
+  border-radius: 50%;
 }
 
-scale.color {
-  min-height: 0;
-  min-width: 0;
-}
-
-scale.color.horizontal {
-  padding: 0 0 12px 0;
-}
-
-scale.color.horizontal slider:dir(ltr), scale.color.horizontal slider:dir(rtl) {
-  margin-bottom: -24px;
-  margin-top: 8px;
-}
-
-scale.color.vertical:dir(ltr) {
-  padding: 0 0 0 12px;
-}
-
-scale.color.vertical:dir(ltr) slider {
-  margin-left: -24px;
-  margin-right: 8px;
-}
-
-scale.color.vertical:dir(rtl) {
-  padding: 0 12px 0 0;
-}
-
-scale.color.vertical:dir(rtl) slider {
-  margin-right: -24px;
-  margin-left: 8px;
-}
 
 /**
  * Progress bars
@@ -3452,6 +3438,10 @@ calendar:indeterminate {
  * Dialogs
  */
 messagedialog.background {
+  background-color: alpha(@color0, 0.8);
+}
+
+messagedialog:backdrop.background {
   background-color: alpha(@color0, 0.8);
 }
 
