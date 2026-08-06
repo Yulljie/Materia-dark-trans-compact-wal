@@ -73,7 +73,7 @@ button:active {
 }
 
 .background:backdrop {
-  background-color: alpha(@background_no_alpha, 0.8);
+  background-color: @background_backdrop;
 }
 
 /*
