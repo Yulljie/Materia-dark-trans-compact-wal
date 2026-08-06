@@ -5340,11 +5340,6 @@ window.background.chromium {
   background-color: @background_no_alpha;
 }
 
-window.background.chromium entry selection {
-  background-color: alpha(@primary, 0.24);
-  color: @color7;
-}
-
 window.background.chromium entry,
 window.background.chromium > button {
   border: 1px solid alpha(@color7, 0.26);
