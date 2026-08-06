@@ -129,7 +129,7 @@ button:active {
 }
 
 textview text {
-  background-color: #121212;
+  background-color: transparent;
   caret-color: alpha(@color7, 0.3);
 }
 
