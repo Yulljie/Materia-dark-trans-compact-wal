@@ -5334,8 +5334,14 @@ window.background > box.vertical > widget > widget > widget > widget > widget > 
 /**
  * Chromium
  */
+
 window.background.chromium {
-  background-color: #2e2e2e;
+  background-color: @background_no_alpha;
+}
+
+window.background.chromium entry selection {
+  background-color: alpha(@primary, 0.24);
+  color: @color7;
 }
 
 window.background.chromium entry,
@@ -5366,16 +5372,17 @@ window.background.chromium textview.view {
 
 window.background.chromium treeview.view.cell:selected:focus {
   background-color: @primary;
-  color: #000;
+  color: @color7;
 }
 
 window.background.chromium treeview.view button {
   border: 1px solid alpha(@color7, 0.26);
-  background-color: #1e1e1e;
+  background-color: @background_no_alpha;
 }
 
 tooltip.background.chromium {
-  background-color: #616161;
+  background-color: @background_no_alpha;
+  color: @color7;
 }
 
 /**
