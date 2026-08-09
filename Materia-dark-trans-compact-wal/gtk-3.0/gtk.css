@@ -1521,7 +1521,7 @@ searchbar > revealer > box {
 }
 
 .titlebar:backdrop {
-  background-color: alpha(@background_no_alpha, 0.8);
+  background-color: @background_backdrop;
   color: alpha(@color7, 0.6);
 }
 
@@ -5340,13 +5340,18 @@ window.background.chromium {
   background-color: @background_no_alpha;
 }
 
-window.background.chromium entry,
-window.background.chromium > button {
+window.background.chromium entry {
   border: 1px solid alpha(@color7, 0.26);
+  background-color: alpha(@color7, 0.08);
 }
 
 window.background.chromium > button {
-  color: @primary;
+  border: none;
+  background-color: @primary_container;
+}
+
+window.background.chromium > button {
+  color: @color7;
 }
 
 window.background.chromium > button:disabled {
@@ -5384,13 +5389,14 @@ tooltip.background.chromium {
 /**
  * Firefox
  */
+
 #MozillaGtkWidget > widget text {
-  background-color: #2e2e2e;
+  background-color: @background_no_alpha;
+  color: @color7;
 }
 
 #MozillaGtkWidget > widget text:selected {
-  background-color: @primary;
-  color: #000;
+  background-color: #121212;
 }
 
 #MozillaGtkWidget > widget > separator {
@@ -5398,7 +5404,7 @@ tooltip.background.chromium {
 }
 
 #MozillaGtkWidget > widget > frame > border {
-  border-color: #505050;
+  border-color: transparent;
 }
 
 #MozillaGtkWidget > widget > entry,
@@ -5415,7 +5421,7 @@ tooltip.background.chromium {
 
 #MozillaGtkWidget > widget > entry {
   min-height: 30px;
-  background-color: #1e1e1e;
+  background-color: @background_no_alpha;
 }
 
 #MozillaGtkWidget > widget > entry:focus {
