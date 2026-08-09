@@ -19,9 +19,15 @@ Well this temptele was designed for pywal in the past.
 
 ## Screenshots
 
+Dark color scheme:
+
 ![dark](images/rei_dark.png)
 
+Light color scheme:
+
 ![light](images/inori_light.png)
+
+Fallback color scheme:
 
 ![fallback](images/fallback.png)
 
