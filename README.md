@@ -17,6 +17,14 @@ Well this temptele was designed for pywal in the past.
 > [!IMPORTANT]
 > The script contains **hardcoded display outputs**. You will need to manually adjust it to match your own system configuration.
 
+## Screenshots
+
+![dark](images/rei_dark.png)
+
+![light](images/inori_light.png)
+
+![fallback](images/fallback.png)
+
 ## License
 
 GPL-2.0 or later, see [`COPYING`](COPYING) for details.
