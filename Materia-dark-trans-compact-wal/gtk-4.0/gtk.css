@@ -11,14 +11,14 @@
 @define-color window_bg_color @background;
 @define-color window_fg_color @color7;
 
-@define-color view_bg_color transparent;
+@define-color view_bg_color @background;
 @define-color view_fg_color @color7;
 
-@define-color headerbar_bg_color transparent;
+@define-color headerbar_bg_color @background;
 @define-color headerbar_fg_color @color7;
 @define-color headerbar_border_color transparent;
 @define-color headerbar_shade_color transparent;
-@define-color headerbar_backdrop_color @background_backdrop;
+@define-color headerbar_backdrop_color @transparent;
 @define-color headerbar_darker_shade_color transparent;
 
 @define-color accent_color @primary;
