@@ -1,0 +1,30 @@
+/* GTK CSS variables */
+/* fallback color scheme, dark mode */
+
+@define-color background transparent;
+@define-color background_no_alpha transparent;
+
+@define-color background_backdrop transparent;
+
+@define-color color0 transparent;
+@define-color color1 transparent;
+@define-color color2 transparent;
+@define-color color3 transparent;
+@define-color color4 transparent;
+@define-color color5 transparent;
+@define-color color6 transparent;
+@define-color color7 transparent;
+@define-color color8 transparent;
+@define-color color9 transparent;
+@define-color color10 transparent;
+@define-color color11 transparent;
+@define-color color12 transparent;
+@define-color color14 transparent;
+@define-color color14 transparent;
+@define-color color15 transparent;
+
+@define-color primary transparent;
+@define-color primary_container transparent;
+
+
+
