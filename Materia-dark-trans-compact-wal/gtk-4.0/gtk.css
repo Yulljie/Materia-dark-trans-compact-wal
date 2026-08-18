@@ -2784,7 +2784,7 @@ scale.fine-tune.vertical {
 }
 
 scale.fine-tune > trough > slider {
-  margin: -14px;
+  margin: -4px;
 }
 
 scale > trough {
@@ -2816,38 +2816,31 @@ scale > trough > fill:disabled {
 }
 
 scale > trough > slider {
-  transition: background-color 75ms cubic-bezier(0, 0, 0.2, 1), background-size 300ms cubic-bezier(0, 0, 0.2, 1), background-image 1200ms cubic-bezier(0, 0, 0.2, 1);
-  min-width: 32px;
-  min-height: 32px;
-  margin: -15px;
+  min-width: 12px;
+  min-height: 12px;
+  margin: -5px;
   border-radius: 50%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: auto, 1000% 1000%;
   color: @primary;
 }
 
 scale > trough > slider {
-  background-image: -gtk-scaled(url("assets/scale-slider-dark.png"), url("assets/scale-slider-dark@2.png")), radial-gradient(circle, transparent 10%, transparent 10%);
+  background-color: @primary;
 }
 
 scale > trough > slider:disabled {
-  background-image: -gtk-scaled(url("assets/scale-slider-disabled-dark.png"), url("assets/scale-slider-disabled-dark@2.png")), radial-gradient(circle, transparent 10%, transparent 10%);
+  background-color: #545454;
 }
 
 scale > trough > slider:hover {
-  background-color: alpha(@primary, 0.12);
+  box-shadow: 0 0 0 10px alpha(@primary, 0.12);
 }
 
 scale > trough > slider:focus {
-  background-color: alpha(@primary, 0.12);
+  box-shadow: 0 0 0 10px alpha(@primary, 0.12);
 }
 
 scale > trough > slider:active {
-  transition: background-color 75ms cubic-bezier(0, 0, 0.2, 1), background-size 0ms, background-image 0ms;
-  animation: ripple-on-slider 225ms cubic-bezier(0, 0, 0.2, 1) forwards;
-  background-image: -gtk-scaled(url("assets/scale-slider-dark.png"), url("assets/scale-slider-dark@2.png")), radial-gradient(circle, alpha(@primary, 0.16) 10%, transparent 10%);
-  background-size: auto, 0% 0%;
+  box-shadow: 0 0 0 10px alpha(@primary, 0.12);
 }
 
 scale > marks,
@@ -2914,51 +2907,63 @@ scale.vertical indicator {
 }
 
 scale.horizontal.marks-before:not(.marks-after) > trough > slider {
-  background-image: -gtk-scaled(url("assets/scale-horz-marks-before-slider-dark.png"), url("assets/scale-horz-marks-before-slider-dark@2.png")), radial-gradient(circle, transparent 10%, transparent 10%);
+  background-color: @primary;
+  border-radius: 50%;
 }
 
 scale.horizontal.marks-before:not(.marks-after) > trough > slider:disabled {
-  background-image: -gtk-scaled(url("assets/scale-horz-marks-before-slider-disabled-dark.png"), url("assets/scale-horz-marks-before-slider-disabled-dark@2.png")), radial-gradient(circle, transparent 10%, transparent 10%);
+  background-color: #545454;
+  border-radius: 50%;
 }
 
 scale.horizontal.marks-before:not(.marks-after) > trough > slider:active {
-  background-image: -gtk-scaled(url("assets/scale-horz-marks-before-slider-dark.png"), url("assets/scale-horz-marks-before-slider-dark@2.png")), radial-gradient(circle, alpha(@primary, 0.16) 10%, transparent 10%);
+  background-color: @primary;
+  border-radius: 50%;
 }
 
 scale.horizontal.marks-after:not(.marks-before) > trough > slider {
-  background-image: -gtk-scaled(url("assets/scale-horz-marks-after-slider-dark.png"), url("assets/scale-horz-marks-after-slider-dark@2.png")), radial-gradient(circle, transparent 10%, transparent 10%);
+  background-color: @primary;
+  border-radius: 50%;
 }
 
 scale.horizontal.marks-after:not(.marks-before) > trough > slider:disabled {
-  background-image: -gtk-scaled(url("assets/scale-horz-marks-after-slider-disabled-dark.png"), url("assets/scale-horz-marks-after-slider-disabled-dark@2.png")), radial-gradient(circle, transparent 10%, transparent 10%);
+  background-color: #545454;
+  border-radius: 50%;
 }
 
 scale.horizontal.marks-after:not(.marks-before) > trough > slider:active {
-  background-image: -gtk-scaled(url("assets/scale-horz-marks-after-slider-dark.png"), url("assets/scale-horz-marks-after-slider-dark@2.png")), radial-gradient(circle, alpha(@primary, 0.16) 10%, transparent 10%);
+  background-color: @primary;
+  border-radius: 50%;
 }
 
 scale.vertical.marks-before:not(.marks-after) > trough > slider {
-  background-image: -gtk-scaled(url("assets/scale-vert-marks-before-slider-dark.png"), url("assets/scale-vert-marks-before-slider-dark@2.png")), radial-gradient(circle, transparent 10%, transparent 10%);
+  background-color: @primary;
+  border-radius: 50%;
 }
 
 scale.vertical.marks-before:not(.marks-after) > trough > slider:disabled {
-  background-image: -gtk-scaled(url("assets/scale-vert-marks-before-slider-disabled-dark.png"), url("assets/scale-vert-marks-before-slider-disabled-dark@2.png")), radial-gradient(circle, transparent 10%, transparent 10%);
+  background-color: #545454;
+  border-radius: 50%;
 }
 
 scale.vertical.marks-before:not(.marks-after) > trough > slider:active {
-  background-image: -gtk-scaled(url("assets/scale-vert-marks-before-slider-dark.png"), url("assets/scale-vert-marks-before-slider-dark@2.png")), radial-gradient(circle, alpha(@primary, 0.16) 10%, transparent 10%);
+  background-color: @primary;
+  border-radius: 50%;
 }
 
 scale.vertical.marks-after:not(.marks-before) > trough > slider {
-  background-image: -gtk-scaled(url("assets/scale-vert-marks-after-slider-dark.png"), url("assets/scale-vert-marks-after-slider-dark@2.png")), radial-gradient(circle, transparent 10%, transparent 10%);
+  background-color: @primary;
+  border-radius: 50%;
 }
 
 scale.vertical.marks-after:not(.marks-before) > trough > slider:disabled {
-  background-image: -gtk-scaled(url("assets/scale-vert-marks-after-slider-disabled-dark.png"), url("assets/scale-vert-marks-after-slider-disabled-dark@2.png")), radial-gradient(circle, transparent 10%, transparent 10%);
+  background-color: #545454;
+  border-radius: 50%;
 }
 
 scale.vertical.marks-after:not(.marks-before) > trough > slider:active {
-  background-image: -gtk-scaled(url("assets/scale-vert-marks-after-slider-dark.png"), url("assets/scale-vert-marks-after-slider-dark@2.png")), radial-gradient(circle, alpha(@primary, 0.16) 10%, transparent 10%);
+  background-color: @primary;
+  border-radius: 50%;
 }
 
 scale.color {
