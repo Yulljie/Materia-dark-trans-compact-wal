@@ -1,0 +1,30 @@
+/* GTK CSS variables */
+/* fallback color scheme, dark mode */
+
+@define-color background alpha(#121212, 0.7);
+@define-color background_no_alpha #121212;
+
+@define-color background_backdrop alpha(#121212, 0.8);
+
+@define-color color0 #000000;
+@define-color color1 #cd0000;
+@define-color color2 #00cd00;
+@define-color color3 #cdcd00;
+@define-color color4 #0000ee;
+@define-color color5 #cd00cd;
+@define-color color6 #00cdcd;
+@define-color color7 #e5e5e5;
+@define-color color8 #7f7f7f;
+@define-color color9 #ff0000;
+@define-color color10 #00ff00;
+@define-color color11 #ffff00;
+@define-color color12 #5c5cff;
+@define-color color14 #ff00ff;
+@define-color color14 #00ffff;
+@define-color color15 #ffffff;
+
+@define-color primary #8ab4f8;
+@define-color primary_container #799eda;
+
+
+
