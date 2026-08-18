@@ -1553,9 +1553,8 @@ windowcontrols:not(:only-child):not(.empty).start:dir(rtl), windowcontrols:not(:
  */
 .titlebar {
   transition: background-color 75ms cubic-bezier(0, 0, 0.2, 1), color 75ms cubic-bezier(0, 0, 0.2, 1);
-  border-radius: 4px 4px 0 0;
-  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), inset 0 1px alpha(@color7, 0.05);
-  background-color: #272727;
+  border-radius: 0;
+  background-color: transparent;
   color: alpha(@color7, 0.87);
 }
 
@@ -1564,7 +1563,7 @@ windowcontrols:not(:only-child):not(.empty).start:dir(rtl), windowcontrols:not(:
 }
 
 .titlebar:backdrop {
-  background-color: #1e1e1e;
+  background-color: transparent;
   color: alpha(@color7, 0.6);
 }
 
@@ -1605,13 +1604,11 @@ windowcontrols:not(:only-child):not(.empty).start:dir(rtl), windowcontrols:not(:
 }
 
 .titlebar entry {
-  box-shadow: inset 0 -1px alpha(@color7, 0.26);
   background-color: alpha(@color7, 0.04);
   color: alpha(@color7, 0.87);
 }
 
 .titlebar entry:disabled {
-  box-shadow: inset 0 -1px alpha(@color7, 0.12);
   background-color: alpha(@color7, 0.04);
   color: alpha(@color7, 0.38);
 }
@@ -1775,7 +1772,6 @@ windowcontrols:not(:only-child):not(.empty).start:dir(rtl), windowcontrols:not(:
 
 .tiled .titlebar, .tiled-top .titlebar, .tiled-right .titlebar, .tiled-bottom .titlebar, .tiled-left .titlebar, .maximized .titlebar, .fullscreen .titlebar {
   border-radius: 0;
-  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
 }
 
 .titlebar.default-decoration {
