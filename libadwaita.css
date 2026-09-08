@@ -1,0 +1,78 @@
+/** Fallback **/
+@define-color background alpha(#121212, 0.7);
+@define-color background_no_alpha #121212;
+@define-color background_backdrop alpha(#121212, 0.8); 
+@define-color color7 #e5e5e5;
+@define-color primary #8ab4f8;
+@define-color primary_container #799eda;
+
+@import url("/tmp/wallpaper.sh.d/Materia-dark-trans-compact-wal-color.css");
+
+/** Adwaita **/
+@define-color window_bg_color @background;
+@define-color window_fg_color @color7;
+
+@define-color view_bg_color transparent;
+@define-color view_fg_color @color7;
+
+@define-color headerbar_bg_color transparent;
+@define-color headerbar_fg_color @color7;
+@define-color headerbar_border_color transparent;
+@define-color headerbar_shade_color transparent;
+@define-color headerbar_backdrop_color transparent;
+@define-color headerbar_darker_shade_color transparent;
+
+@define-color accent_color @primary;
+@define-color accent_bg_color @primary_container;
+
+@define-color card_bg_color @surface;
+@define-color card_fg_color @color7;
+@define-color card_shade_color transparent;
+
+@define-color sidebar_bg_color transparent;
+@define-color sidebar_fg_color @color7;
+@define-color sidebar_backdrop_color transparent;
+@define-color sidebar_shade_color transparent;
+@define-color sidebar_border_color alpha(@color7, 0.12);
+
+@define-color secondary_sidebar_bg_color @background;
+@define-color secondary_sidebar_fg_color @color7;
+@define-color secondary_sidebar_backdrop_color transparent;
+@define-color secondary_sidebar_shade_color transparent;
+@define-color secondary_sidebar_border_color transparent;
+
+@define-color overview_bg_color @background;
+@define-color overview_fg_color @color7;
+
+:root {
+	--window-radius: 0px;
+	--popover-bg-color: alpha(@background_no_alpha, 0.9);
+	--popover-fg-color: @color7;
+	--popover-shade-color: transparent;
+	--dialog-bg-color: @background_no_alpha;
+	--dialog-fg-color: @color7;
+	--overview-bg-color: transparent;
+	--overview-fg-color: @color7;
+	--scrollbar-outline-color: transparent;
+}
+
+window.background {
+  background-color: @background;
+  transition: background-color 0.25s;
+}
+
+window.background:backdrop {
+  background-color: @background_backdrop;
+}
+
+popover.background {
+  background: none;
+}
+
+sheet.background {
+  background-color: @background_no_alpha;
+}
+
+.floating-bar {
+  background-color: @background_no_alpha;
+}
