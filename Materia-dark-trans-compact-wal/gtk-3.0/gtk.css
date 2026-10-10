@@ -609,13 +609,13 @@ button {
 button:drop(active),
 button:hover {
   box-shadow: 0 2px 2.4px -1px alpha(@color0, 0.2), 0 4px 3px 0 alpha(@color0, 0.14), 0 1px 6px 0 alpha(@color0, 0.12);
-  background-color: alpha(@on_surface, 0.0784);
+  background-color: mix(alpha(@on_surface, 0.04), alpha(@on_surface, 0.87), 0.08);
 }
 
 
 button:focus {
   box-shadow: 0 2px 2.4px -1px alpha(@color0, 0.2), 0 4px 3px 0 alpha(@color0, 0.14), 0 1px 6px 0 alpha(@color0, 0.12);
-  background-color: alpha(@on_surface, 0.1168);
+  background-color: mix(alpha(@on_surface, 0.04), alpha(@on_surface, 0.87), 0.10);
 }
 
 
@@ -627,7 +627,7 @@ button:active {
 
 button:disabled {
   box-shadow: none;
-  background-color: alpha(@on_surface, 0.08);
+  background-color: alpha(@on_surface, 0.12);
   color: alpha(@on_surface, 0.38);
 }
 
@@ -635,21 +635,21 @@ button:disabled {
 button:checked {
   color: @primary;
   box-shadow: 0 3px 2px -3px alpha(@color0, 0.3), 0 2px 2px -1px alpha(@color0, 0.24), 0 1px 3px 0 alpha(@color0, 0.12);
-  background-color: alpha(@primary, 0.1168);
+  background-color: alpha(@primary, 0.12);
 }
 
 
 button:checked:drop(active),
 button:checked:hover {
   box-shadow: 0 2px 2.4px -1px alpha(@color0, 0.2), 0 4px 3px 0 alpha(@color0, 0.14), 0 1px 6px 0 alpha(@color0, 0.12);
-  background-color: @primary_container;
+  background-color: mix(alpha(@primary, 0.04), alpha(@on_surface, 0.87), 0.08);
 }
 
 
 button:checked:focus {
   box-shadow: 0 2px 2.4px -1px alpha(@color0, 0.2), 0 4px 3px 0 alpha(@color0, 0.14), 0 1px 6px 0 alpha(@color0, 0.12);
 /*  background-color: #465162;  */
-  background-color: alpha(@primary, 0.1168);
+  background-color: mix(alpha(@primary, 0.04), alpha(@on_surface, 0.87), 0.10);
 }
 
 
@@ -661,7 +661,7 @@ button:checked:active {
 
 button:checked:disabled {
   box-shadow: none;
-  background-color: alpha(@on_surface, 0.1904);
+  background-color: alpha(@on_surface, 0.12);
   color: alpha(@on_surface, 0.38);
 }
 
@@ -828,19 +828,19 @@ button.osd:disabled {
 }
 
 button.suggested-action {
-  color: @on_surface;
+  color: @on_primary;
   box-shadow: 0 3px 2px -3px alpha(@color0, 0.3), 0 2px 2px -1px alpha(@color0, 0.24), 0 1px 3px 0 alpha(@color0, 0.12);
-  background-color: alpha(@on_surface, 0.1);
+  background-color: @primary;
 }
 
 button.suggested-action:drop(active), button.suggested-action:hover {
   box-shadow: 0 2px 2.4px -1px alpha(@color0, 0.2), 0 4px 3px 0 alpha(@color0, 0.14), 0 1px 6px 0 alpha(@color0, 0.12);
-  background-color: alpha(@on_surface, 0.2);
+  background-color: mix(@primary, @on_primary, 0.08);
 }
 
 button.suggested-action:focus {
   box-shadow: 0 2px 2.4px -1px alpha(@color0, 0.2), 0 4px 3px 0 alpha(@color0, 0.14), 0 1px 6px 0 alpha(@color0, 0.12);
-  background-color: @primary_container;
+  background-color: mix(@primary, @on_primary, 0.10);
 }
 
 button.suggested-action:active {
@@ -850,13 +850,14 @@ button.suggested-action:active {
 
 button.suggested-action:disabled {
   box-shadow: none;
-  background-color: alpha(@on_surface, 0.1);
-  color: alpha(@color0, 0.38);
+  background-color: alpha(@on_surface, 0.12);
+  color: alpha(@on_surface, 0.38);
 }
 
 button.suggested-action:checked {
   box-shadow: 0 3px 2px -3px alpha(@color0, 0.3), 0 2px 2px -1px alpha(@color0, 0.24), 0 1px 3px 0 alpha(@color0, 0.12);
-  background-color: #7497d0;
+  background-color: @secondary;
+  color: @on_secondary;
 }
 
 button.suggested-action:checked:drop(active), button.suggested-action:checked:hover {
