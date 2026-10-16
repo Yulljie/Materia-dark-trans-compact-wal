@@ -24,7 +24,13 @@
 @define-color color15 #ffffff;
 
 @define-color primary #8ab4f8;
+@define-color on_primary #000000;
 @define-color primary_container #799eda;
+
+@define-color surface #aeaeae;
+@define-color surface_container #121212;
+@define-color on_surface #ffffff;
+
 
 
 
