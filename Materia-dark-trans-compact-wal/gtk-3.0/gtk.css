@@ -1513,7 +1513,8 @@ widget#GTKNoCSDHeaderBox .titlebar {
 }
 
 .titlebar {
-  transition: background-color 75ms cubic-bezier(0, 0, 0.2, 1), color 75ms cubic-bezier(0, 0, 0.2, 1);
+/*  transition: background-color 75ms cubic-bezier(0, 0, 0.2, 1), color 75ms cubic-bezier(0, 0, 0.2, 1); */
+  transition: background-color 0.25s, color 0.25s;
   border-radius: 0;
 /*  box-shadow: 0 2px 2px -2px alpha(@color0, 0.3), 0 1px 2px -1px alpha(@color0, 0.24), 0 1px 2px -0.6px alpha(@color0, 0.17), inset 0 1px alpha(@on_surface, 0.05);  */
 /*  background-color: alpha(@background_no_alpha, 0.8);  */
@@ -1773,7 +1774,6 @@ widget#GTKNoCSDHeaderBox .titlebar {
 
 .solid-csd .titlebar:dir(rtl), .solid-csd .titlebar:dir(ltr) {
   border-radius: 0;
-  box-shadow: 0 2px 2px -2px alpha(@color0, 0.3), 0 1px 2px -1px alpha(@color0, 0.24), 0 1px 2px -0.6px alpha(@color0, 0.17);
 }
 
 headerbar {
